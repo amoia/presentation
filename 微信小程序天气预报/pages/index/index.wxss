@@ -1,0 +1,65 @@
+/*wxml*/
+.container{
+ position:absolute;
+ padding: 20rpx;
+ left: 0;
+ top: 0;
+ font-family: '楷体';
+}
+
+.now{
+  color: #fff;
+  height: 580rpx;
+  display: flex;
+  flex-direction: column;
+}
+.tmp{
+  flex-grow: 0.8;/*剩余的80%空间全部分给它*/
+}
+.now-tmp{
+  font-size:5rem;
+}
+.bg{
+  width:750rpx;
+  height:600rpx;
+}
+
+.info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 710rpx;
+}
+
+.vr{
+  border-right: 2rpx solid #fff;
+}
+.info-item{
+  text-align: center;
+}
+.val{
+  font-size: 1.8rem;
+}
+
+.type-icon{
+  width: 80rpx;
+  height: 80rpx;
+  vertical-align: middle;
+}
+
+.cast-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 710rpx;
+  align-items: center;
+  border-bottom: 2rpx solid #aaa;
+  padding: 35rpx 0;
+}
+
+.copy{
+  text-align: center;
+  font-family: '宋体';
+  font-weight: bold;
+  padding: 20rpx 0;
+}

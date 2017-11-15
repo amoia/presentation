@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>首页</title>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<script type="text/javascript" src="jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+		<!--首页导航条-->
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!--首页缩小屏幕时右上角的按钮，按下会把导航条列向显示，再按会隐藏-->
+					<a class="navbar-brand" href="#">
+						<img src="img/logo.jpg" class="img-responsive" />
+					</a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<!--首页有个home图标-->
+						<li class="active">
+							<a href="index.html">
+								<span class="glyphicon glyphicon-home" aria-hidden="true"></span> 首页
+								<span class="sr-only">(current)</span>
+							</a>
+						</li>
+						<li><a href="info.html">最新资讯</a></li>
+						<li><a href="jobstar.html">宠物明星</a></li>
+						<li><a href="aboutus.html">关于我们</a></li>
+						<li><a href="contact.html">联系我们</a></li>
+					</ul>
+					<form class="navbar-form navbar-right">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Search">
+						</div>
+						<button type="submit" class="btn btn-default">搜索</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+
+		<!-- 轮播图-->
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<img src="img/萌宠1.jpg" alt="tom" class="img-responsive" />
+					<div class="carousel-caption">
+						animal
+					</div>
+				</div>
+				<div class="item">
+					<img src="img/萌宠2.jpg" alt="tom" class="img-responsive" />
+					<div class="carousel-caption">
+						animal
+					</div>
+				</div>
+				<div class="item ">
+					<img src="img/萌宠3.jpg" alt="tom" class="img-responsive" />
+					<div class="carousel-caption">
+						animal
+					</div>
+				</div>
+				.....
+			</div>
+
+			<!-- Controls -->
+			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+
+		<!-- 轮播图下的四个图片和四个内容-->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="media content1">
+						<div class="media-left">
+							<a href="#">
+								<img class="media-object" src="img/萌宠5.jpg" alt="1" />
+							</a>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">heading</h4> ...
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="media content1">
+						<div class="media-left">
+							<a href="#">
+								<img class="media-object" src="img/萌宠6.jpg" alt="2" />
+							</a>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">heading</h4> ...
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="media content1">
+						<div class="media-left">
+							<a href="#">
+								<img class="media-object" src="img/萌宠7.jpg" alt="3" />
+							</a>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">heading</h4> ...
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="media content1">
+						<div class="media-left">
+							<a href="#">
+								<img class="media-object" src="img/萌宠8.jpg" alt="4" />
+							</a>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">heading</h4> ...
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container">
+			<!-- 左文右图-->
+			<div class="row">
+				<div class="col-md-6 col-sm-6 content-left">
+					<div class="content2 center-block text-center">
+						<h3>标题标题标题</h3>
+						<p>内容内容内容啊啊啊啊啊啊啊内容内容内容啊啊啊啊啊啊啊</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6">
+					<img src="img/cat.jpg" class="img-responsive center-block" />
+				</div>
+			</div>					
+			<!-- 右文左图-->
+			<div class="row">
+				<div class="col-md-6  col-sm-6 content-right">
+					<div class="content2 center-block text-center">
+						<h3>标题标题标题</h3>
+						<p>内容内容内容啊啊啊啊啊啊啊内容内容内容啊啊啊啊啊啊啊</p>
+					</div>
+				</div>
+				<div class="col-md-6  col-sm-6 content-left">					
+					<img src="img/cat.jpg" class="img-responsive center-block" />											
+				</div>
+			</div>
+		</div>
+		
+		<!--底部信息-->
+		<footer>
+			<p class="text-center">粤ICP备XXXXXX号 &copy;moi 版权所有 
+			<p class="text-center">联系电话：13169613348，邮箱：m13169613348@163.com </p>
+			<p class="text-center">地址：珠海市香洲区金凤路6号北京理工大学珠海学院 </p>
+		</footer>
+
+	</body>
+</html>

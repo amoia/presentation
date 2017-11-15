@@ -1,0 +1,48 @@
+<image src="../../assets/day.jpg" mode="aspectFill" class="bg"></image>
+<view class="container">
+  <view class="now">
+    <view class="tmp">
+      <view class="district">{{district}}</view>
+      <view class="street">{{street}}</view>
+      <view class="now-tmp">{{now.tmp}}℃</view>
+      <view class="type">{{now.cond.txt}} | 空气质量：良</view>
+    </view>
+    <view class="info">
+      <view class="info-item">
+        <view class="tit">{{now.wind.dir}}</view>
+        <view class="val">{{now.wind.sc}}</view>
+      </view>
+      <view class="vr"></view>
+      <view class="info-item">
+        <view class="tit">相对湿度</view>
+        <view class="val">{{now.hum}}%</view>
+      </view>
+      <view class="vr"></view>
+      <view class="info-item">
+        <view class="tit">体感温度</view>
+        <view class="val">{{now.fl}}℃</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="forecast">
+    <block wx:for="{{ forecast }}" wx:for-item="fc" wx:for-index="i">
+      <view class="cast-item">
+        <view class="cast-weekday" wx:if="{{i==0}}">今天</view>
+        <view class="cast-weekday" wx:elif="{{i==1}}">明天</view>
+        <view class="cast-weekday" wx:else>{{weekday}}</view>
+        <view class="cast-type">
+          <image class="type-icon" src="../../assets/icons/{{fc.cond.code_d}}.png"></image>
+          {{fc.cond.txt_d}} | 良
+        </view>
+        <view class="cast-tmp">
+          {{fc.tmp.max}}℃ / {{fc.tmp.min}}℃
+        </view>
+      </view>
+    </block>
+  </view>
+
+
+
+  <view class="copy">moi © 版权所有</view>
+</view>
